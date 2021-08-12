@@ -64,7 +64,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">Will you make it if you were on the Titanic? Describe your self using left menu and find out. </p>', unsafe_allow_html=True)
+st.markdown('<p class="big-font">Would you make it if you were on the Titanic? Describe your self using left menu and find out. </p>', unsafe_allow_html=True)
 
 st.sidebar.title('Describe yourself')
 
