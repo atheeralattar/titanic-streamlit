@@ -1,12 +1,6 @@
 import streamlit as st
 import pandas as pd
 import pickle
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import LeaveOneOut
-from PIL import Image
 rose = ('https://static.wikia.nocookie.net/heroes-of-the-characters/images/c/cc/Rose_DeWitt_Bukater.jpg')
 jack = 'https://static.wikia.nocookie.net/jamescameronstitanic/images/c/c6/Untitledaksjk.png'
 
