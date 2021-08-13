@@ -104,6 +104,7 @@ prediction_inp = [pclass] + [age] + [fare] + [cabin] + \
                  [family_size] + [status_value] + titles_vector + gender_value + embarked_vector
 
 survial = model.predict_proba([prediction_inp])[0,1]
+survial = round (survial,2)
 
 if survial*100 > 50:
 
@@ -116,7 +117,7 @@ else:
 
 
 md_results_green = f"<p class=\"colored-font\"> There is a <span style=\"color: green\"> {survial*100}% </span> you will end up like <span style=\"color: green\"> {fate} </span></p>"
-md_results_red = f"<p class=\"colored-font\"> There is a <span style=\"color: red\"> {(1- (survial))*100}% </span> you will end up like <span style=\"color: red\"> {fate} </span></p>"
+md_results_red = f"<p class=\"colored-font\"> There is a <span style=\"color: red\"> {(1-survial)*100}% </span> you will end up like <span style=\"color: red\"> {fate} </span></p>"
 
 if survial*100 > 50:
     md_results = md_results_green
